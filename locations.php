@@ -1126,7 +1126,7 @@ class LocationsPlugin extends GoldPlugin
 	}
 	
 	// returns a list of all locations in the database, sorted by the title, ascending
-	private function get_all_locations()
+	public function get_all_locations()
 	{
 		$conditions = array('post_type' => 'location',
 							'post_count' => -1,
